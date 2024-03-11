@@ -16,7 +16,7 @@ jobs:
 
   call-gradle-deploy:
     needs: resolve-tag
-    uses: cardgourmet/krabby/.github/workflows/gradle-deploy.yml@main
+    uses: cardgourmet/.github/workflow-templates/gradle-deploy.yml@main
     with:
       tag: ${{ needs.resolve-tag.outputs.tag }}
     secrets: inherit
